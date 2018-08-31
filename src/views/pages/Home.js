@@ -4,7 +4,6 @@ import '../../App.scss'
 
 class Page extends Component {
   componentDidMount(){
-    console.log('entra');
     this.props.get_bucket_list();
   }
   componentDidUpdate(){
@@ -21,7 +20,7 @@ class Page extends Component {
               </div>
               {bucket.Items.map((item, item_index) => {
                   return (
-                    <ItemCard my_item={item}/>
+                    <ItemCard key={item_index} my_item={item}/>
                   )
                 })
               }
