@@ -1,0 +1,139 @@
+/* General styles Content */
+
+html {
+  height: 100%;
+  font-size: 18px;
+}
+
+body {
+  min-height: 100%;
+  background-color: rgb(242, 242, 242) !important;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0px !important;
+  padding: 0px !important;
+  font-family: 'Helvetica', sans-serif;
+}
+
+.t-center {
+  text-align: center;
+}
+
+.b-white {
+  background-color: #fff;
+}
+
+/* Navbar */
+
+.navbar-center {
+  margin: 0 auto !important;
+}
+
+.nav-brand {
+  font-size: 1.5em !important;
+  font-weight: bold !important;
+}
+
+/* Card Holder */
+
+.card-container {
+  width: 100%;
+  padding: 30px 20px !important;
+}
+
+.card-holder {
+  width: 100%;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.card-title {
+  font-size: 1.25em !important;
+  margin-top: 20px !important;
+}
+
+.card-text {
+  border: 1px solid rgb(193, 193, 193);
+  border-radius: 5px;
+  margin: 20px 0;
+  padding: 10px !important;
+  background-color: #fff;
+  box-shadow: 2px 2px 5px rgb(193, 193, 193);
+  -webkit-transition: box-shadow 0.5s ease;
+  /* For Safari 3.1 to 6.0 */
+  transition-duration: box-shadow 0.5s ease;
+  &:hover {
+    box-shadow: 15px 15px 15px rgb(193, 193, 193);
+  }
+  .c-title {
+    font-size: 1em;
+    font-weight: bold !important;
+    color: rgb(52, 52, 52) !important;
+  }
+  .c-text {
+    margin: 20px 0 !important;
+    color: rgb(103, 103, 103) !important;
+  }
+}
+
+/*Requirements:
+
+
+
+On desktop and tablet landscape, columns should be horizontally ordered.
+
+On tablet portrait, horizontal scroll is disabled, it should have 2 columns horizontally per row.
+
+On mobile every column should be below each other.
+
+
+
+Tech Requirements
+
+Use the latest version of ReactJS.
+
+Use Redux for data/state management
+
+Use ES6/7 features as much you can.
+
+Use SASS with CSS-Modules for styling or a CSS-in-JS solution.
+
+Make every component reusable and independient.
+
+Use webpack for assets compilation.
+
+Make a loading transition (Optional)
+
+Add Post-CSS for you styles (Optional)
+
+Make one (or more) unit tests using JEST (Optional)
+*/
+/******************************** MEDIA QUERIES *************************************/
+
+@media only screen and (min-width: 480px) {
+  .card-holder {
+    width: 49%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .card-title {
+    margin-top: 0px;
+  }
+  .card-container {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 30px 0px !important;
+  }
+  .card-holder {
+    width: 300px;
+    white-space: normal;
+    margin: 0 25px;
+  }
+}
+
+@media only screen and (min-width: 992px) {}
+
+@media only screen and (min-width: 1224px) {}
